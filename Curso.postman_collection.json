@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "b684d1b5-7beb-4fe5-84da-944175edabf3",
+		"name": "Curso",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27792665"
+	},
+	"item": [
+		{
+			"name": "Buscar Cursos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/curso",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"curso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Curso",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quantidadeAlunos\":10,\r\n    \"nivelCurso\": \"Básico\",\r\n    \"turmas\": [\r\n        {\r\n            \"codigo\": 7, \r\n            \"nome\": \"turma A2\"\r\n        }\r\n    ]\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/curso",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"curso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Curso",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quantidadeAlunos\":5,\r\n    \"nivelCurso\": \"Intermediário\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/curso/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"curso",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remover Curso",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quantidadeAlunos\":5,\r\n    \"nivelCurso\": \"Intermediário\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/curso/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"curso",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
